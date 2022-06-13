@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: Arial;
+}
+
+/* ----CLASES HEADER Y FOOTER----- */
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: steelblue;
+    color: white;
+    max-width: 100%;
+}
+
+.header h1{
+    font-size: 1.5rem;
+    padding: 1%;
+}
+
+.footer{
+    background-color: rgb(153, 112, 112);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+}
+
+.footer h2{
+    padding: 1%;
+    font-size: 1rem;
+}
+
+/* ----CLASES DEL GRID----- */
+
+.grid-container {  
+    display: grid;
+    grid-template-columns: 0.5fr 2.2fr;
+    grid-template-areas:
+      "menu main";
+    height: 100vh;
+    max-width: 90%;
+    margin: 1rem auto;
+    gap: 15px;
+}
+
+.menu{
+    grid-area: menu;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 1%;
+    padding: 5%;
+    height: max-content;
+    /*----AGREGAR TAMAÑO Y POSITION STICKY----*/
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 10px;
+    max-width: 300px;
+    flex: wrap;
+    
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-area: main;
+    gap: 3%;
+    justify-items: center;
+    max-width: 100%;
+
+    
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px groove;
+    border-radius: 2%;
+    white-space: pre-line;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card img{
+    max-width: 45%;
+}
+
+.cardboton{
+    display: block;
+    border: 1px solid blueviolet;
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    
+}
